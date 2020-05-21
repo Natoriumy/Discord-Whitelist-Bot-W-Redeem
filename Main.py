@@ -84,4 +84,4 @@ async def getrole(ctx):
         await ctx.send("> `You aren't authorized to use this command!`")
 
 
-client.run("NjY2NzY5Nzg4NTk2NTE4OTQy.XsXtjg.u3q8yX7bguTda1n98FY0bkDsiJY")
+client.run("NjY2NzY5Nzg4NTk2NTE4OTQy.XsX7pA.WaPj9TeGYCIvXpH2XzxowjW2WMs")
