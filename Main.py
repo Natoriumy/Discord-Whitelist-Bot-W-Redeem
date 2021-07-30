@@ -5,7 +5,7 @@ import json
 
 client = commands.Bot(command_prefix=">")
 token = "token here"
-key = "usedWhitelistKeys.txt" # Path to website which got used whitelist keys
+key = "WhitelistKeys.txt" # Path to website which got used whitelist keys
 client.remove_command("help")
 file1 = "already_used_keys.json"
 file2 = "whitelisted_users.json"
