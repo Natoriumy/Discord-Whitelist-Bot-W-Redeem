@@ -3,7 +3,7 @@
 Hello, it was one of my discord bots for one of my whitelists made by IHaxU ( He is one of the guys who helped me in the start, thank you, even though you ignore me now, I still like you) </br>
 Now to the main process, how this does work?
 
-1. For, first of all, we need an API that works, redeems key, so we can read redeemed keys through key variable, it can be URL or just a text file, used in main.py, every key in redeemed text document needs to be based on a new line.
+1. For first of all, post keys in a site so we can read keys through key variable, it can be url or just a text file, used in main.py, every key in keys text document need to be based on new line.
 
 2. Create a "Buyer" Role in the discord server, our bot needs to be higher than this role to give people this role.
 
