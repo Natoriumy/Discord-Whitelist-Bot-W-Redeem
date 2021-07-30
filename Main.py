@@ -4,6 +4,8 @@ from discord.ext import commands
 import json
 
 client = commands.Bot(command_prefix=">")
+token = "token here"
+key = "usedWhitelistKeys.txt" # Path to website which got used whitelist keys
 client.remove_command("help")
 file1 = "already_used_keys.json"
 file2 = "whitelisted_users.json"
@@ -56,7 +58,7 @@ async def redeem(ctx, key=""):
         data_tx_read = open(file1, "r").read()
         to_json = json.loads(data_tx_read)
         key_list = requests.get(
-            "http://gameovers.net/Scripts/Paid/ABDMUniversal/4chdqwPEmOk2mPbaZHl4/usedWhitelistKeys.txt").text.split(
+           key).text.split(
             "\n")
         if str(key) in key_list and str(key) in to_json:
             await ctx.send("> `Key has already been redeemed!`")
@@ -84,4 +86,4 @@ async def getrole(ctx):
         await ctx.send("> `You aren't authorized to use this command!`")
 
 
-client.run("NjY2NzY5Nzg4NTk2NTE4OTQy.XsX7pA.WaPj9TeGYCIvXpH2XzxowjW2WMs")
+client.run(token)
